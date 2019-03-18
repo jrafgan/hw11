@@ -19,10 +19,15 @@ header{
 }
 .main-nav>ul>li{
 	display: inline-block;
-	padding: 0 10px 0 18px;
+	padding: 0 10px 0;
 	position: relative;
 	margin-top: 24px;
 }
+
+.main-nav>ul>li:nth-child(4n) {
+	padding-left: 18px;
+}
+
 .main-nav{
 	border-radius: 3px;
 	font-weight: 600;
@@ -69,11 +74,11 @@ top: 32px;
 	width: 200px;
 	text-align: center;
 }
-.main-nav>ul>li:hover::before{
+.main-nav>ul>li:nth-child(4n):hover::before{
 content: "";
 position: absolute;
 top: 14px;
-left: 19px;
+left: 10px;
 width: 0;
 height: 0;
 border-style: solid;
